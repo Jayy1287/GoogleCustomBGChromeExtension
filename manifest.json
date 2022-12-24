@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "MyBG",
+    "description": "Customize your background to Google.com",
+    "version": "1.0.0",
+    "icons": {
+        "16": "/images/spex16.png", 
+        "48": "/images/spex48.png",
+        "128": "/images/spex128.png"        
+    },
+
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*"],
+        "css": ["main.css"]
+    }]
+
+}
